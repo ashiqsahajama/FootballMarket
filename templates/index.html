@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Football Players Market value Analysis</title>
+</head>
+<body class="header">
+    <section class="head">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="color: white; font-size: 35px;">Football Players Market Value Predictor</a>
+        </nav>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+            <div class="details">
+                <div class="card" >
+                    <div class="card-body">
+                    <h4 class="card-title">Enter the details here</h4>
+                    <div class="container">
+                        <form id="form" action="http://127.0.0.1:5000" method="POST">
+                            <div class="form-row">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" name="pname" placeholder="Name" style="margin: 15px;" autofocus required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <input type="number" class="form-control" name="age" placeholder="Age" style="margin: 15px;" required>
+                            </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">League</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01" name="league">
+                                            <option selected value="1">Premier Leauge</option>
+                                            <option value="2">La Liga</option>
+                                            <option value="3">Bundesliga</option>
+                                            <option value="4">Serie A</option>
+                                            <option value="5">Ligue1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-group mb-3" style="margin: 15px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">Position</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect02" name="pos">
+                                            <option selected value="3">Forward</option>
+                                            <option value="1">Mid Field</option>
+                                            <option value="2">Defender</option>
+                                            <option value="4">Wing Back/Gk</option>
+                                        </select>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="mp" placeholder="Matches Played" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="ms" placeholder="Matches Started" style="margin: 15px;" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="ga" placeholder="Goals and Assits" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="pk" placeholder="Penalities Scored" style="margin: 15px;" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="fk" placeholder="Freekicks scored" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="tc" placeholder="Tackles Attempted" style="margin: 15px;" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="tcw" placeholder="Tackles Won" style="margin: 15px;" required>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input type="number" class="form-control" name="pass" placeholder="Passes Completed" style="margin: 15px;" required>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <input class="btn btn-secondary" type="submit" style="padding: 8px 20px;" value="Submit">
+                            </div>
+                            <div style="text-align: center; margin: 5px;">
+                                <span id="result"></span>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div style="color: white;"> 
+            <p>&#169; Copyrights reserved</p>
+        </div>
+    </section>
+</body>

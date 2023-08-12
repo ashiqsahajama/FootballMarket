@@ -1,0 +1,25 @@
+.header {
+  font-family: 'Poppins', sans-serif;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/campnou3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+  .main{
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 25%;
+    padding: 10px;
+  }
+  .head{
+    padding: 20px;
+  }
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
